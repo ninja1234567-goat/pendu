@@ -1,3 +1,10 @@
+"""
+Rétroaction :
+Logique algorithmique :                 5/5 (partiellement donné)
+Fonctionnement du programme python :    4/5 (il manque des affichages entre chaque tour dans la boucle)
+Documentation :                         2/2 (fournie)
+Total :                                 11/12
+"""
 import random
 
 def choisir_mot(liste_mots):
@@ -94,8 +101,8 @@ def jouer():
             lettre,
             vies
         )
-    afficher_mot(mot_cache)
-    print("Lettre tentées:", lettres_tentees)
+    afficher_mot(mot_cache)                     # Ces 2 ligne doivent être décalées vers la droite
+    print("Lettre tentées:", lettres_tentees)   # pour être dans la boucle.
     if mot_trouve(mot_cache):
         print("\n Tu as trouver le mot!", mot_secret)
     else:
